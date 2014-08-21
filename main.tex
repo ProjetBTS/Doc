@@ -61,44 +61,78 @@ Les fonctionnalités avancées et l'interface Web intuitive sont conçues pour v
 
 \begin{figure}[!ht]
 \center
-\includegraphics[width=10cm]{Images/1.PNG} 
-\caption{Pour continuer appuyer sur "Entrer"}
+\includegraphics[width=9cm]{Images/1.PNG} 
+\caption{Ecran de boot}
 \end{figure}
 
+\begin{center}
+Pour commencer l'installation de Proxmox il faut appuyer sur la touche "entrée"
+\end{center}
 
 \begin{figure}[!ht]
 \center
-\includegraphics[width=10cm]{Images/2.PNG} 
+\includegraphics[width=9cm]{Images/2.PNG} 
 \caption{Accepter les conditions en cliquant sur "I agree"}
 \end{figure}
 
 \begin{figure}[!ht]
 \center
 \includegraphics[width=10cm]{Images/3.PNG}  
-\caption{Choisir le disque pour l'installation}
+\caption{Choix du disque}
 \end{figure}
 
+\begin{center}
+Je rappel que nous somme sur un environnement VirtualBox je n'ai alors qu'un choix de disque dur, sur une machine physique composée de plusieurs disque dur il y aura donc plusieurs choix de disque. 
+\end{center}
 
 \begin{figure}[!ht]
 \center
-\includegraphics[width=10cm]{Images/4.PNG}  
-\caption{Localisation et choix du clavier}
-\end{figure}
-\newpage
-\begin{figure}[!ht]
-\center
-\includegraphics[width=10cm]{Images/5.PNG}  
+\includegraphics[width=9cm]{Images/4.PNG}  
 \caption{Localisation et choix du clavier}
 \end{figure}
 
+\begin{center}
+Dans cette partie vous aurai a choisir votre pays ainsi que le mode de clavier que vous désiré.\\
+\end{center}
+
 \begin{figure}[!ht]
 \center
-\includegraphics[width=10cm]{Images/6.PNG}  
+\includegraphics[width=9cm]{Images/5.PNG}  
+\caption{Mot de passe et adresse mail ADMIN}
+\end{figure}
+
+\begin{center}
+Pour cette partie le mot de passe sera le mot de passe pour l'utilisateur "root" c'est a dire l'administrateur disposant des plein droit sur le serveur Proxmox. 
+\end{center}
+
+\begin{figure}[!ht]
+\center
+\includegraphics[width=8cm]{Images/6.PNG}  
 \caption{Configuration réseau}
 \end{figure}
 
-\section{Création de la machine virtuel}
-\section{Gestion des droits}
+\begin{center}
+Pour finir les configurations réseau de proxmox avec l'adresse IP de votre machine. Pour ce qui est du miroir vous j'ai pris celle ci: 
+\textit{proxmox1.silog.fr} Il ne vous reste plus qu'a entrer l'adresse IP de votre serveur dans un navigateur 
+\textbf{\textit{ex: https://192.168.X.X:8006}}
+\end{center}
+
+\newpage
+\section{Création de compte utilisateur}
+
+Par défaut sur Proxmox nous avons un seul utilisateur, root, qui dispose des pleins droit sur tout le système. Nous allons donc voir dans cette parti comment crée de nouveau utilisateur soit en ligne de commande ou alors avec Webmin de façon graphique.
+
+\subsection{En ligne de commandes avec Putty}
+\textbf{PuTTY} est un émulateur de terminal doublé d'un client pour les protocoles SSH, Telnet, rlogin, et TCP brut. Il permet également d'établir des connexions directes par liaison série RS-232. À l'origine disponible uniquement pour Windows, il est à présent porté sur diverses plates-formes Unix 
+
+\begin{figure}[!ht]
+\center
+\includegraphics[width=10cm]{Images/7.PNG}  
+\caption{Putty}
+\end{figure}
+
+Pour la connexion à notre serveur Proxmox nous allons utiliser le protocole SSH (Secure Shell) qui permet une connexion sécurisé sur notre serveur.
+
 
 
 \end{document}
