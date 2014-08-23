@@ -120,7 +120,7 @@ Pour finir les configurations réseau de proxmox avec l'adresse IP de votre mach
 \newpage
 \section{Création de compte utilisateur}
 
-Par défaut sur Proxmox nous avons un seul utilisateur, root, qui dispose des pleins droit sur tout le système. Nous allons donc voir dans cette parti comment crée de nouveau utilisateur soit en ligne de commande ou alors avec Webmin de façon graphique.
+Par défaut sur Proxmox nous avons un seul utilisateur, root, qui dispose des pleins droit sur tout le système. Nous allons donc voir dans cette partie comment crée de nouveau utilisateur soit en ligne de commande ou alors avec Webmin de façon graphique.
 
 \subsection{En ligne de commandes avec Putty}
 \textbf{PuTTY} est un émulateur de terminal doublé d'un client pour les protocoles SSH, Telnet, rlogin, et TCP brut. Il permet également d'établir des connexions directes par liaison série RS-232. À l'origine disponible uniquement pour Windows, il est à présent porté sur diverses plates-formes Unix 
@@ -131,7 +131,17 @@ Par défaut sur Proxmox nous avons un seul utilisateur, root, qui dispose des pl
 \caption{Putty}
 \end{figure}
 
+\newpage
 Pour la connexion à notre serveur Proxmox nous allons utiliser le protocole SSH (Secure Shell) qui permet une connexion sécurisé sur notre serveur.
+
+Une fois l'adresse IP du serveur proxmox entrée un terminal apparaît, nous allons donc nous connecter en root pour crée les nouveaux utilisateurs.
+
+\begin{figure}[!ht]
+\center
+\includegraphics[width=10cm]{Images/8.PNG}  
+\caption{Connexion en SSH sur le serveur}
+\end{figure}
+
 
 
 
